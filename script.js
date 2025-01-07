@@ -24,3 +24,24 @@ sr.reveal('.main-btn', { delay: 860, origin: 'left' });
 sr.reveal('.share', { delay: 950, origin: 'bottom' });
 
 sr.reveal('.home-img', { delay: 1000, origin: 'right' });
+
+sr.reveal('.biodata-text', { delay: 500, origin: 'left', distance: '50px', duration: 2000 });
+sr.reveal('.biografi-text', { delay: 500, origin: 'left', distance: '50px', duration: 2000 });
+sr.reveal('.hobi-text', { delay: 500, origin: 'left', distance: '50px', duration: 2000 });
+sr.reveal('.prestasi-text', { delay: 500, origin: 'left', distance: '50px', duration: 2000 });
+
+// Menangkap tombol berdasarkan id
+const downloadBtn = document.getElementById('download-btn');
+const hireBtn = document.getElementById('hire-btn');
+
+// Tambahkan event listener untuk tombol Download CV
+downloadBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Mencegah link berfungsi default
+    alert('Coming Soon');
+});
+
+// Tambahkan event listener untuk tombol Hire Me Now
+hireBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Mencegah link berfungsi default
+    alert('Coming Soon');
+});
