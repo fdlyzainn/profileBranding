@@ -30,18 +30,33 @@ sr.reveal('.biografi-text', { delay: 500, origin: 'left', distance: '50px', dura
 sr.reveal('.hobi-text', { delay: 500, origin: 'left', distance: '50px', duration: 2000 });
 sr.reveal('.prestasi-text', { delay: 500, origin: 'left', distance: '50px', duration: 2000 });
 
-// Menangkap tombol berdasarkan id
+
 const downloadBtn = document.getElementById('download-btn');
 const hireBtn = document.getElementById('hire-btn');
 
-// Tambahkan event listener untuk tombol Download CV
+
 downloadBtn.addEventListener('click', (e) => {
-    e.preventDefault(); // Mencegah link berfungsi default
-    alert('Coming Soon');
+    e.preventDefault();
+    alert('Coming Soon!');
 });
 
-// Tambahkan event listener untuk tombol Hire Me Now
+
 hireBtn.addEventListener('click', (e) => {
-    e.preventDefault(); // Mencegah link berfungsi default
-    alert('Coming Soon');
+    e.preventDefault(); // 
+    alert('Coming Soon!');
+});
+
+const introBtn = document.getElementById('intro-btn');
+const introDropdown = document.getElementById('intro-dropdown');
+
+introBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    introDropdown.classList.toggle('open');
+});
+
+
+document.addEventListener('click', (e) => {
+    if (!introBtn.contains(e.target) && !introDropdown.contains(e.target)) {
+        introDropdown.classList.remove('open');
+    }
 });
