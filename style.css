@@ -375,11 +375,11 @@ section {
 
 .biodata-photo img {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 
 .biodata-text {
@@ -423,4 +423,15 @@ section {
     .biodata-text p {
         font-size: 14px;
     }
+}
+
+.biografi-text h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.biografi-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
